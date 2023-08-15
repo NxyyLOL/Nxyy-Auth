@@ -1,9 +1,9 @@
 
-# Koopa Auth
+# Koopa Auth V2
 
 Koopa Auth is a discord / python / mysql based auth for tools bots and more 
 
-![Verification](https://cdn.discordapp.com/attachments/1095666948446105662/1100549958073057310/image.png)
+
 
 ## Features
 
