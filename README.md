@@ -20,8 +20,8 @@ Backup Cord provides the following commands:
 - `/reset <key>`
   - hwid reset 
 
-- `.bserver <2023-03-05_15-01-32.json>`
-  - Command to restore the server
+- `/check <key>`
+  - check key
   
 ## To-Do List
 
