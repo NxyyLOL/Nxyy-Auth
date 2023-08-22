@@ -58,6 +58,30 @@ Backup Cord provides the following commands:
     - Manage Admins ❌ ( Bot and Dashboard ) 
     - Master Keys ❌
 
+## Setting Up MySQL Table Using phpMyAdmin
+
+To set up the required MySQL table for Koopa Auth V2 using phpMyAdmin, follow these steps:
+
+1. **Access phpMyAdmin:**
+   Open your web browser and navigate to the phpMyAdmin interface. You can usually access it by going to `http://localhost/phpmyadmin` or the URL provided by your server administrator.
+
+2. **Select Database:**
+   On the left side of the phpMyAdmin interface, choose the database where you want to create the table for Koopa Auth V2.
+
+3. **Navigate to SQL Tab:**
+   Click on the "SQL" tab in the top navigation menu. This is where you can execute SQL queries.
+
+4. **Run SQL Query:**
+   In the SQL tab, you'll find a text area. Copy and paste the following SQL query into the text area:
+
+   ```sql
+   CREATE TABLE auth (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     auth_key VARCHAR(100) NOT NULL,
+     auth_type ENUM('1', '2', '3') NOT NULL,
+     hardware_id VARCHAR(100),
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
 
 
 Note: ✅ indicates completed tasks, and ❌ indicates pending tasks.
