@@ -39,7 +39,7 @@ Backup Cord provides the following commands:
 - Create ✅
 - Check ✅
 - Reset HWID ✅
-- Setup Tutorial ❌
+- Setup Tutorial ❌ ( Soon ) 
 
 ### Dashboard:
 - Public? ❌
@@ -47,16 +47,16 @@ Backup Cord provides the following commands:
     - Change Logs ✅
     - Trial System ✅
     - Reset Key ✅
-    - Tool Downloader ❌
-    - Automatic Tool Updates ❌ (api)
-    - Reset Key ❌
+    - Tool Downloader ✅
+    - Automatic Tool Updates ✅ (api)
+    - Reset Key ✅
 - Admin Panel ✅
     - Reset Key ✅
     - Reset HWID ✅
     - Key Creation ✅
-- Owner Panel ❌
+- Owner Panel ✅
     - Manage Admins ❌ ( Bot and Dashboard ) 
-    - Master Keys ❌
+    - Master Keys ✅
 
 ## Setting Up MySQL Table Using phpMyAdmin
 
