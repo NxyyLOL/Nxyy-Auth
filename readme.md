@@ -13,16 +13,19 @@ Koopa Auth is a discord / python / mysql based auth for tools bots and more
 
 ## Commands
 
-Backup Cord provides the following commands:
+Koopa Auth provides the following commands:
 
 - `/create <type> (key)`
-  - creates a key <type> Week,Month,LifeTime | <key> optional custom key
+  - creates a key <type> Week, Month, LifeTime | <key> optional custom key
 
 - `/reset <key>`
-  - hwid reset 
+  - resets the hwid for a key 
 
 - `/check <key>`
-  - check key
+  - checks key
+
+- `/claim <key>`
+  - claims role by key
   
 ## To-Do List
 
@@ -79,7 +82,7 @@ To set up the required MySQL table for Koopa Auth V2 using phpMyAdmin, follow th
      id INT AUTO_INCREMENT PRIMARY KEY,
      auth_key VARCHAR(100) NOT NULL,
      auth_type ENUM('1', '2', '3') NOT NULL,
-     hardware_id VARCHAR(100),
+     hwid VARCHAR(100),
      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
 
