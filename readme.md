@@ -41,6 +41,7 @@ Koopa Auth provides the following commands:
 ### Bot:
 - Create ✅
 - Check ✅
+- Claim ✅
 - Reset HWID ✅
 - Setup Tutorial ❌ ( Soon ) 
 
