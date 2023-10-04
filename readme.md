@@ -43,6 +43,7 @@ Koopa Auth provides the following commands:
 - Check ✅
 - Claim ✅
 - Reset HWID ✅
+- Key List (DB) (admin) (being made) ❌
 - Setup Tutorial ❌ ( Soon ) 
 
 ### Dashboard:
