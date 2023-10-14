@@ -1,7 +1,6 @@
 
-# Koopa Auth V2
-## [Purchase V3](https://koopa.gg/store/koopa-licenses/)
-Koopa Auth is a discord / python / mysql based auth for tools bots and more 
+# Nxyy Auth V1
+Nxyy Auth is a discord+python+mysql based auth for tools, bots, and more 
 
 
 
@@ -9,14 +8,14 @@ Koopa Auth is a discord / python / mysql based auth for tools bots and more
 
 - HWID Lock
 - Logging 
-- Force Log Out Sessions ( Soon )
+- Force Log Out Sessions (Soon)
 
 ## Commands
 
 Koopa Auth provides the following commands:
 
 - `/create <type> (key)`
-  - creates a key <type> Week, Month, LifeTime | <key> optional custom key
+  - creates a key <type> Week, Month, Lifetime | <key> optional custom key
 
 - `/reset <key>`
   - resets the hwid for a key 
@@ -44,7 +43,7 @@ Koopa Auth provides the following commands:
 - Claim ✅
 - Reset HWID ✅
 - Key List (DB) (admin) (being made) ❌
-- Setup Tutorial ❌ ( Soon ) 
+- Setup Tutorial ❌ (Soon) 
 
 ### Dashboard:
 - Public? ❌
@@ -67,19 +66,25 @@ Koopa Auth provides the following commands:
 
 To set up the required MySQL table for Koopa Auth V2 using phpMyAdmin, follow these steps:
 
-1. **Access phpMyAdmin:**
+1. **Download XAMPP**
+   download xampp to get mysql on ur pc, or get a actual db if u want
+
+2. **Access phpMyAdmin:**
    Open your web browser and navigate to the phpMyAdmin interface. You can usually access it by going to `http://localhost/phpmyadmin` or the URL provided by your server administrator.
 
-2. **Select Database:**
-   On the left side of the phpMyAdmin interface, choose the database where you want to create the table for Koopa Auth V2.
+3. **Create Database:**
+   On the left side of the phpMyAdmin interface, Create the database for mysql you can name it whatever u like but i suggest using "auth"
 
-3. **Navigate to SQL Tab:**
+4. **Choose Database**
+    On the left side of the phpMyAdmin interface, Choose the database you want to make the auth table for Nxyy Auth V1
+
+5. **Navigate to SQL Tab:**
    Click on the "SQL" tab in the top navigation menu. This is where you can execute SQL queries.
 
-4. **Run SQL Query:**
+6. **Run SQL Query:**
    In the SQL tab, you'll find a text area. Copy and paste the following SQL query into the text area:
-
-   ```sql
+   
+```
    CREATE TABLE auth (
      id INT AUTO_INCREMENT PRIMARY KEY,
      auth_key VARCHAR(100) NOT NULL,
@@ -87,6 +92,6 @@ To set up the required MySQL table for Koopa Auth V2 using phpMyAdmin, follow th
      hwid VARCHAR(100),
      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
-
+```
 
 Note: ✅ indicates completed tasks, and ❌ indicates pending tasks.
