@@ -1,7 +1,7 @@
 {
-  "name": "koopa-auth-v2-bot",
+  "name": "skidded auth bot",
   "version": "2.0.1",
-  "description": "Discord bot for key management for koopa auth v2",
+  "description": "auth that I might improve a bit but it's skidded",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
