@@ -2,13 +2,13 @@
   "name": "koopa-auth-v2-bot",
   "version": "2.0.1",
   "description": "Discord bot for key management for koopa auth v2",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KoopaCode/Koopa-Auth-PUBLIC.git"
+    "url": "git+https://github.com/NxyyLOL/Nxyy-Auth.git"
   },
   "keywords": [
     "auth",
@@ -22,12 +22,12 @@
     "free",
     "lol"
   ],
-  "author": "KoopaCode",
+  "author": "NxyyLOL",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KoopaCode/Koopa-Auth-PUBLIC/issues"
+    "url": "https://github.com/NxyyLOL/Nxyy-Auth/issues"
   },
-  "homepage": "https://github.com/KoopaCode/Koopa-Auth-PUBLIC#readme",
+  "homepage": "https://github.com/NxyyLOL/Nxyy-Auth#readme",
   "dependencies": {
     "discord.js": "^13.1.0",
     "mysql": "^2.18.1"
