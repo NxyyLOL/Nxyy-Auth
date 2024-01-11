@@ -2,15 +2,14 @@
 const mysql = require('mysql');
 
 const mysqlConfig = {
-  host: 'your_host_name',
-  user: 'user_username',
-  password: 'your_password',
-  database: 'your_database_name'
+  host: 'mysqlhost',
+  user: 'mysqlusername',
+  password: 'mysqlpassword',
+  database: 'auth' // leave db as is
 };
 
-const botToken = 'Bot_Token';
-
-
+const botToken = 'bot_token';
+const guildId = 'guild_id'; 
 
 const pool = mysql.createPool(mysqlConfig);
 
@@ -85,15 +84,12 @@ async function createSlashCommands() {
       },
     ];
 
-    const guildId = 'Your Guild ID'; // Put Your Guild ID Here
-
     await client.guilds.cache.get(guildId)?.commands.set(commands);
     console.log('Slash commands registered.');
   } catch (error) {
     console.error('Error registering slash commands:', error);
   }
 }
-
 
 
 client.on('interactionCreate', async (interaction) => {
@@ -204,7 +200,8 @@ client.on('interactionCreate', async (interaction) => {
 
 
 function isAuthorizedUser(userId) {
-  return userId === 'User ID' || userId === 'User ID';
+  return userId === 'User ID' 
+  || userId === 'User ID';
 }
 
 
