@@ -11,7 +11,7 @@ MYSQL_CONFIG = {
     'user': 'user_username',
     'password': 'your_password',
     'host': 'your_host_name',
-    'database': 'your_database_name'
+    'database': 'auth'
 }
 
 class Theme:
