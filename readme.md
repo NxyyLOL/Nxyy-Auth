@@ -1,6 +1,6 @@
 
 # Nxyy Auth V1
-Nxyy Auth is a discord+python+mysql based auth for tools, bots, and more 
+Nxyy Auth is a auth that doesn't really work well tbh, keyauth is better
 
 
 
