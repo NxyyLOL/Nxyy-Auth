@@ -119,7 +119,7 @@ def send_discord_webhook(key, hwid, ip, expires):
     }
 
     data = {
-        'username': 'WebHook Name',
+        'username': 'logs',
         'embeds': [embed]
     }
 
