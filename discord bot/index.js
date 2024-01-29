@@ -134,7 +134,7 @@ client.on('interactionCreate', async (interaction) => {
       const button = new Discord.MessageButton()
         .setLabel('Download')
         .setStyle('LINK')
-        .setURL('https://koopa.lol'); // replace koopa.lol with your download url
+        .setURL('https://nxyy.lol'); // replace nxyy.lol with your download url
 
       interaction.reply({ embeds: [embed], components: [new Discord.MessageActionRow().addComponents(button)] });
     } catch (err) {
